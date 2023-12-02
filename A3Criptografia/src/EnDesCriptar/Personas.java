@@ -8,39 +8,15 @@ public class Personas implements Serializable {
 	private static final long serialVersionUID = -3999977146484347198L;
 
 	
-	private String nombre;
 	private String usuario;
-	private String correo;
+	private String password;
 	
 	
 	
-	
-
-
-	public Personas(String nombre, String usuario, String correo) {
+	public Personas(String usuario, String password) {
 		super();
-		this.nombre = nombre;
 		this.usuario = usuario;
-		this.correo = correo;
-	}
-
-
-
-	@Override
-	public String toString() {
-		return "Personas [nombre=" + nombre + ", usuario=" + usuario + ", correo=" + correo + "]";
-	}
-
-
-
-	public String getNombre() {
-		return nombre;
-	}
-
-
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+		this.password = password;
 	}
 
 
@@ -57,15 +33,37 @@ public class Personas implements Serializable {
 
 
 
-	public String getCorreo() {
-		return correo;
+	public String getPassword() {
+		return password;
 	}
 
 
 
-	public void setCorreo(String correo) {
-		this.correo = correo;
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Personas [usuario=" + usuario + ", password=" + password + "]";
 	}
 	
-
+	
+	
+	
+	
+	
+	
 }
+	
+	
+	
+	
+
+
+
+
+
+

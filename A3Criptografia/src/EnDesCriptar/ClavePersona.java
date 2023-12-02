@@ -32,16 +32,16 @@ public class ClavePersona {
 			
 			cifrador.init(Cipher.ENCRYPT_MODE, raboToledano);
 			
-			//Creamos la persona
+		
 			
-			Personas p1 = new Personas("Brando","Marlon","BrandoMarlon@gmail.com");
-			Personas p2=  new Personas("Lucia", "Berlin", "LuciaBerlin@gmail.com");
-			Personas p3 = new Personas("Rocco", "Sifreddi", "eltalento@hotmail.com");
+			Personas p1 = new Personas("Brando","Marlon");
+			Personas p2=  new Personas("Lucia", "Berlin");
+			Personas p3 = new Personas("Alexander", "Portnoy");
 			
             SealedObject so = new SealedObject(p1, cifrador);
             SealedObject so2 = new SealedObject(p2, cifrador);
             SealedObject so3 = new SealedObject(p3, cifrador);
-			
+	
             System.out.println("Persona original "+p1);
             System.out.println("Persona cifrado "+so);
             System.out.println("Persona original "+p2);
