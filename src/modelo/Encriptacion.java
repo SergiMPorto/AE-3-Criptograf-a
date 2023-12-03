@@ -1,4 +1,4 @@
-package entidad;
+package modelo;
 
 import java.io.UnsupportedEncodingException;
 import java.security.GeneralSecurityException;
